@@ -46,7 +46,9 @@ nav{
     margin-right: 121px;
     cursor: pointer;
 }
-
+button{
+    cursor: pointer;
+}
 
 h1{
     font-size: 40px;

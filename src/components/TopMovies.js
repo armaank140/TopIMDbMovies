@@ -1,21 +1,15 @@
 import React from "react";
-import Cards from "./Cards";
 import Data from "../Data";
+import Cards from "./Cards";
 
-// let fData = Data.filter((val)=> val.rating>=9.0)
-// console.log(fData[1].title)
-// console.log(fData.map((fval)=>fval.title))
+export default function TopMovies() {
+  let fData = Data.filter((val) => val.rating >= 9.0);
 
-// const topMovies = () => {
-//   return  console.log(fData.map((fval)=>fval.title))
-// }
+  //   console.log(fData.map((fval)=>fval.title))
 
-console.log(Data.length);
-
-export default function Main() {
   return (
     <>
-      {Data.map((val) => {
+      {fData.map((val) => {
         // console.log(index)
         // console.log(arr)
         return (
